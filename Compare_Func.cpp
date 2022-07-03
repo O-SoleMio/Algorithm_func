@@ -5,10 +5,9 @@
 
 using namespace std;
 
-int cmp(int a,int b)
+int cmp(int a)
 {
-	if (a > b + 3)
-		return b;
+	return a += 1;
 }
 
 int main()
@@ -16,5 +15,6 @@ int main()
 	vector<int> numbers = {0,10,2,3,5,8,9};
 
 	sort(numbers.begin(), numbers.end());
+	
 	for (int i : numbers) cout << i << endl;
 }
