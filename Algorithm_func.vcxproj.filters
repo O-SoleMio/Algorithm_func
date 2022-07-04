@@ -18,7 +18,7 @@
     <ClCompile Include="Compare_Func.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="dfs_bfs.cpp">
+    <ClCompile Include="target_numbers.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
