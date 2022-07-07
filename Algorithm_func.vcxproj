@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Compare_Func.cpp" />
+    <ClCompile Include="Phone_numbers.cpp" />
     <ClCompile Include="target_numbers.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
