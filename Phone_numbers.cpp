@@ -2,29 +2,34 @@
 #include <vector>
 #include <string>
 #include <algorithm>
-#include <map>
+#include <unordered_map>
 
 using namespace std;
 
 bool solution(vector<string> phone_book) {
     bool answer = true;
 
+    unordered_map<string,int> phone_map;
+    pair<string,int> insert_pair;
     for (int i = 0; i < phone_book.size(); i++)
     {
-        for (int j = 0; j < phone_book.size(); j++)
-        {
-            if (phone_book[i].find(phone_book[j]) == 0 && i != j)
-            {
-                answer = false;
-                return answer;
-            }
-        }
+        insert_pair = make_pair(phone_book[i],i);
+        phone_map.insert(insert_pair);        
     }
+
+    auto f = phone_map.find("12");
+
+    if(f != phone_map.end()) 
+    {
+        cout << f->second << endl;
+    }
+    
+
     return answer;
 }
 
 int main()
 {
-    vector<string> phone_book = { "119","97674223","1195524421" };
+    vector<string> phone_book = { "12","12","1235","567","88"};
     cout << solution(phone_book);
 }
