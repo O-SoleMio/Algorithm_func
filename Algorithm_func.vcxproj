@@ -142,6 +142,7 @@
     <ClCompile Include="Compare_Func.cpp" />
     <ClCompile Include="Phone_numbers.cpp" />
     <ClCompile Include="target_numbers.cpp" />
+    <ClCompile Include="test_smartPointer.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
