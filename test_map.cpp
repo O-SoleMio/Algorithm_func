@@ -22,5 +22,5 @@ int main()
 		cout << findName->first << " " << findName->second<< endl;
 	}// 결과 SAM 5
 
-	cout << waitingNum.count("KIM");
+	cout << waitingNum.count("KIM"); // 결과 1
 }
